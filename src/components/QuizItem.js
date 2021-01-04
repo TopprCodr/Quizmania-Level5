@@ -18,7 +18,7 @@ export default function QuizItem({
         onPress={handleOnPress}>
             {
                 imageUrl ?
-                    <Image source={{ uri: imageUrl }} style={styles.image} />
+                    <Image source={{ uri: imageUrl.uri }} style={styles.image} />
                     : <Image source={require("../../assets/quiz.jpg")} 
                     style={styles.image} />
             }
